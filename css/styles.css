@@ -2,6 +2,7 @@
   --color-primary: #ff7629;
   --color-body: #696969;
   --color-headings: #161412;
+  --color-icon-contianer: #ffede1;
 }
 
 /* Typography */
@@ -74,4 +75,44 @@ p {
 .list--inline .list__item {
   display: inline-block;
   margin-right: 2rem;
+}
+
+/* Icons */
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  background: var(--color-icon-contianer);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon--medium {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-container-medium {
+  background: var(--color-icon-contianer);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon--small {
+  width: 22px;
+  height: 22px;
 }
