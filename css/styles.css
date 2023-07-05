@@ -71,6 +71,29 @@ p {
   }
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-chevron {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.link-chevron::after {
+  content: url(../images/rightchevronlink.svg);
+  margin-left: 5px;
+  position: relative;
+  top: 4px;
+  transition: margin 0.3s;
+}
+
+.link-chevron:hover::after {
+  margin-left: 10px;
+}
+
 /* Badges */
 .badge {
   border-radius: 30px;
