@@ -93,6 +93,10 @@ p {
   fill: var(--color-primary);
 }
 
+.icon--white {
+  fill: #fff;
+}
+
 .icon-container {
   background: var(--color-icon-contianer);
   width: 100px;
@@ -194,4 +198,29 @@ p {
 .btn--white-v2:hover {
   color: var(--color-primary);
   transform: scale(1.05);
+}
+
+.btn--chevron {
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 0;
+  padding: 1rem 1.3rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn--chevron:hover {
+  background: #000;
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .btn--chevron {
+    padding: 1.2rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn--chevron {
+    padding: 1.5rem 1.8rem;
+  }
 }
