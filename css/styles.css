@@ -71,6 +71,34 @@ p {
   }
 }
 
+/* Badges */
+.badge {
+  border-radius: 30px;
+  padding: 1.2rem 2rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  color: #000;
+}
+
+.badge--white {
+  background: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* TODO: Perhaps remove this from the badge section and add the hover affect to where you are going to put the badge instead. */
+.badge--white:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .badge {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+  }
+}
+
 /* Lists */
 .list {
   list-style: none;
@@ -260,4 +288,25 @@ p {
   transform: scale(1.01);
   box-shadow: 0 1px 16px 0 rgba(255, 118, 41, 0.04),
     0 4px 16px 0 rgba(22, 20, 18, 0.04);
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--1x4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
