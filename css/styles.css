@@ -154,6 +154,12 @@ a {
   margin-left: 7px;
 }
 
+/* This class is an exception because this is the only icon that changes sizes depending on screen size. */
+.icon--stars {
+  width: 164px;
+  height: 25.49px;
+}
+
 .icon-container {
   background: var(--color-icon-contianer);
   width: 100px;
@@ -182,6 +188,13 @@ a {
 .icon--small {
   width: 22px;
   height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon--stars {
+    width: 193px;
+    height: 30px;
+  }
 }
 
 /* Buttons */
@@ -363,5 +376,44 @@ a {
   .avatar {
     height: 72px;
     width: 72px;
+  }
+}
+
+/* Quotes */
+.quote {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quote__name {
+  font-weight: bold;
+  color: #161412;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
+@media screen and (min-width: 480px) {
+  .quote {
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .quote__footer {
+    /* This might not be the best approach */
+    position: relative;
+    left: 85px;
+    bottom: 70px;
   }
 }
