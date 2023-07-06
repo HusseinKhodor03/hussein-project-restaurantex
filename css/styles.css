@@ -351,3 +351,17 @@ a {
   color: #161412;
   display: block;
 }
+
+/* Testimonial Avatars */
+.avatar {
+  border-radius: 100%;
+  height: 64px;
+  width: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .avatar {
+    height: 72px;
+    width: 72px;
+  }
+}
