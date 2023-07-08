@@ -417,3 +417,30 @@ a {
     bottom: 70px;
   }
 }
+
+/* Menu Items */
+.menu-item {
+  position: relative;
+  text-align: center;
+  padding: 0 1.6rem;
+}
+
+.menu-item__image {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.menu-item__heading {
+  margin-bottom: 0.8rem;
+  margin-top: 2rem;
+}
+
+.menu-item__body {
+  margin-bottom: 0;
+}
+
+.menu-item__badge {
+  position: absolute;
+  top: 3%;
+  right: 6%;
+}
