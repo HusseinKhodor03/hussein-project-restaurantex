@@ -11,6 +11,12 @@
   box-sizing: border-box;
 }
 
+/* Reusable Container Class */
+.container {
+  max-width: 1272px;
+  margin: 0 auto;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -443,4 +449,53 @@ a {
   position: absolute;
   top: 3%;
   right: 6%;
+}
+
+/* Blocks */
+.block {
+  /* TODO: May need to come back and adjust the padding for all blocks */
+  padding: 6rem 2rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--light-orange {
+  background: #fff9f3;
+}
+
+.block--orange {
+  background: var(--color-primary);
+}
+
+.block--orange .block__heading,
+.block--orange p {
+  color: #fff;
+}
+
+.block--gradient {
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 60%,
+    var(--color-primary) 60%,
+    var(--color-primary) 100%
+  );
+}
+
+@media screen and (min-width: 768px) {
+  .block--gradient {
+    background: linear-gradient(
+      to right,
+      #fff 0%,
+      #fff 60%,
+      var(--color-primary) 60%,
+      var(--color-primary) 100%
+    );
+  }
 }
