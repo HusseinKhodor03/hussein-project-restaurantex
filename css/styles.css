@@ -160,7 +160,12 @@ a {
   margin-left: 7px;
 }
 
-/* This class is an exception because this is the only icon that changes sizes depending on screen size. */
+.icon--menu {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
 .icon--stars {
   width: 164px;
   height: 25.49px;
@@ -174,6 +179,12 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--menu {
+  background: var(--color-primary);
+  width: 46px;
+  height: 46px;
 }
 
 .icon--medium {
@@ -200,6 +211,16 @@ a {
   .icon--stars {
     width: 193px;
     height: 30px;
+  }
+
+  .icon--menu {
+    width: 26px;
+    height: 26px;
+  }
+
+  .icon-container--menu {
+    width: 54px;
+    height: 54px;
   }
 }
 
@@ -497,5 +518,133 @@ a {
       var(--color-primary) 60%,
       var(--color-primary) 100%
     );
+  }
+}
+
+/* Collapsibles */
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Navigation Bars */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2.4rem;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item:first-child {
+  padding-top: 3.4rem;
+}
+
+.nav__item {
+  padding-bottom: 2rem;
+}
+
+.nav .btn {
+  display: none;
+}
+
+.nav__item > a {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: var(--color-primary);
+}
+
+.nav__toggler {
+  transition: box-shadow 0.2s;
+}
+
+.nav__brand {
+  transform: translateY(3px);
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  box-shadow: 0 0 0 3px #666;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    justify-content: flex-end;
+  }
+
+  .nav__toggler {
+    display: flex;
+    order: 3;
+    margin-left: 1.2rem;
+  }
+
+  .nav__brand {
+    margin-right: auto;
+  }
+
+  .nav .btn {
+    display: inline-block;
+    padding: 1.4rem 2.4rem;
+    margin: 0;
+  }
+
+  .nav .btn--white {
+    margin-right: 1.6rem;
+  }
+
+  .nav__list {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__brand {
+    margin-right: 0;
+  }
+
+  .nav__list {
+    display: flex;
+    width: auto;
+    max-height: 100%;
+    opacity: 1;
+    margin-right: auto;
+    margin-left: 2.2rem;
+  }
+
+  .nav__item:first-child {
+    padding-top: 0;
+  }
+
+  .nav__item {
+    padding-right: 2.4rem;
+    padding-bottom: 0;
+  }
+
+  .nav .btn {
+    order: 4;
+    padding: 1.4rem 2.4rem;
+    margin: 0;
+  }
+
+  .nav .btn--white {
+    margin-right: 2.4rem;
   }
 }
