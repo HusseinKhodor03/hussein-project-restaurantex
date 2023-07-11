@@ -570,11 +570,21 @@ a {
 }
 
 .nav__toggler {
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.3s;
+}
+
+.nav__toggler:hover {
+  transform: scale(1.05);
 }
 
 .nav__brand {
-  transform: translateY(3px);
+  position: relative;
+  top: 3px;
+  transition: transform 0.3s;
+}
+
+.nav__brand:hover {
+  transform: scale(1.05);
 }
 
 .nav.collapsible--expanded .nav__toggler {

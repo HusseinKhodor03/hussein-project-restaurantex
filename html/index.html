@@ -13,5 +13,27 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"><img src="../images/logo.svg" alt="" /></a>
+      <span
+        class="icon-container icon-container--menu nav__toggler"
+        style="flex-shrink: 0"
+      >
+        <svg class="icon--menu">
+          <use href="../images/sprite.svg#menu"></use>
+        </svg>
+      </span>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Menu</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#">Delivery</a></li>
+      </ul>
+      <button class="btn btn--white">Order online</button>
+      <button class="btn btn--primary">Reserve</button>
+    </nav>
+    <script src="../javascript/main.js"></script>
+  </body>
 </html>
