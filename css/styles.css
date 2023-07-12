@@ -495,7 +495,7 @@ a {
 
 /* Blocks */
 .block {
-  /* TODO: May need to come back and adjust the padding for all blocks */
+  /* TODO: Might come back and delete this class as padding varies from block to block */
   padding: 6rem 2rem;
 }
 
@@ -812,5 +812,65 @@ a {
 
   .order-apps__app {
     margin: 0 3.4rem;
+  }
+}
+
+/* Browse Menu Sections Block */
+.block-browse-menu-sections .grid {
+  gap: 3.2rem 1.6rem;
+}
+
+.block-browse-menu-sections {
+  padding: 10rem 1.6rem;
+}
+
+.block-browse-menu-sections__heading {
+  margin: 0 0 3.6rem;
+}
+
+.block-browse-menu-sections__buttons .btn {
+  margin: 0;
+}
+
+.block-browse-menu-sections__buttons {
+  margin-top: 4.8rem;
+}
+
+.block-browse-menu-sections__buttons .btn--primary {
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 480px) {
+  .block-browse-menu-sections .grid {
+    gap: 2.4rem;
+  }
+
+  .block-browse-menu-sections {
+    padding: 10rem 2.4rem;
+  }
+
+  .block-browse-menu-sections__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .block-browse-menu-sections__buttons .btn--white {
+    margin-left: 2.4rem;
+  }
+
+  .block-browse-menu-sections__buttons .btn--primary {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-browse-menu-sections {
+    padding: 16rem 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block-browse-menu-sections {
+    padding: 22rem 2.4rem;
   }
 }
