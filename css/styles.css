@@ -133,13 +133,6 @@ a {
 
 .badge--white {
   background: #fff;
-  transition: background 0.3s, color 0.3s;
-}
-
-/* TODO: Perhaps remove this from the badge section and add the hover affect to where you are going to put the badge instead. */
-.badge--white:hover {
-  background: #000;
-  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -471,7 +464,6 @@ a {
 .menu-item {
   position: relative;
   text-align: center;
-  padding: 0 1.6rem;
 }
 
 .menu-item__image {
@@ -490,8 +482,8 @@ a {
 
 .menu-item__badge {
   position: absolute;
-  top: 3%;
-  right: 6%;
+  top: 16px;
+  right: 16px;
 }
 
 /* Blocks */
@@ -1057,5 +1049,81 @@ a {
 
   .about-us__buttons .btn--primary {
     margin-bottom: 0;
+  }
+}
+
+/* Browse Menu Items Block */
+.block-browse-menu-items {
+  padding: 10rem 1.6rem;
+}
+
+.browse-menu-items__heading {
+  margin-top: 0;
+}
+
+.browse-menu-items__content {
+  margin-bottom: 0;
+}
+
+.block-browse-menu-items .block__header {
+  margin-bottom: 6.8rem;
+  max-width: 550px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.block-browse-menu-items .grid {
+  gap: 4.8rem 1.6rem;
+}
+
+.browse-menu-items__buttons {
+  margin-top: 4.8rem;
+}
+
+.browse-menu-items__buttons .btn {
+  margin: 0;
+}
+
+.browse-menu-items__buttons .btn--primary {
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 480px) {
+  .block-browse-menu-items {
+    padding: 10rem 2.4rem;
+  }
+
+  .block-browse-menu-items .grid {
+    column-gap: 2.4rem;
+  }
+
+  .browse-menu-items__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .browse-menu-items__buttons .btn {
+    display: inline-block;
+    width: auto;
+  }
+
+  .browse-menu-items__buttons .btn--primary {
+    margin: 0 2rem 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-browse-menu-items {
+    padding: 16rem 2.4rem;
+  }
+
+  .block-browse-menu-items .grid {
+    row-gap: 8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block-browse-menu-items {
+    padding: 22rem 2.4rem;
   }
 }
