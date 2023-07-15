@@ -346,6 +346,7 @@ a {
   text-align: center;
   padding: 4.8rem 2.4rem;
   transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
 }
 
 .card:hover {
@@ -700,7 +701,7 @@ a {
 .hero__image {
   width: 100%;
   height: 100%;
-  border-radius: 1.6rem;
+  border-radius: 16px;
   object-fit: cover;
   transform: rotate(-2deg);
 }
@@ -872,5 +873,189 @@ a {
 @media screen and (min-width: 1024px) {
   .block-browse-menu-sections {
     padding: 22rem 2.4rem;
+  }
+}
+
+/* About Us Block */
+.block-about-us {
+  padding: 10rem 1.6rem;
+}
+
+.block-about-us .grid {
+  gap: 5.6rem 1.6rem;
+}
+
+.about-us__heading {
+  margin: 0 0 1.6rem;
+}
+
+.about-us__content {
+  max-width: 500px;
+}
+
+.about-us__description {
+  margin-bottom: 4.8rem;
+}
+
+.about-us__buttons .btn {
+  margin: 0;
+}
+
+.about-us__buttons .btn--primary {
+  margin-bottom: 1.6rem;
+}
+
+.about-us__image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us__card {
+  margin-top: 2.4rem;
+}
+
+.about-us__card-heading {
+  margin: 0 0 2.4rem;
+}
+
+.about-us__card p {
+  margin: 0;
+}
+
+.about-us__location,
+.about-us__phone,
+.about-us__email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+}
+
+.about-us__phone > a,
+.about-us__email > a {
+  color: var(--color-body);
+  transition: color 0.3s;
+}
+
+.about-us__phone > a:hover,
+.about-us__email > a:hover {
+  color: var(--color-primary);
+}
+
+.about-us__location .icon--small,
+.about-us__phone .icon--small,
+.about-us__email .icon--small {
+  margin: 0 1.6rem 0.8rem 0;
+}
+
+@media screen and (min-width: 480px) {
+  .block-about-us {
+    padding: 10rem 2.4rem;
+  }
+
+  .block-about-us .grid {
+    column-gap: 2.4rem;
+  }
+
+  .about-us__buttons .btn {
+    display: inline-block;
+    width: auto;
+  }
+
+  .about-us__buttons .btn--primary {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .about-us__card {
+    border-radius: 16px;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    padding: 4.8rem 3.2rem;
+    background: #fff;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 0%;
+    bottom: -7%;
+    box-shadow: 0 4px 16px 0 rgba(22, 20, 18, 0.04);
+  }
+
+  .about-us__location,
+  .about-us__phone,
+  .about-us__email {
+    flex-direction: row;
+  }
+
+  .about-us__location .icon--small,
+  .about-us__phone .icon--small,
+  .about-us__email .icon--small {
+    margin: 0 1.6rem 0 0;
+    transform: translateY(2px);
+  }
+
+  .about-us__image {
+    max-height: 500px;
+    max-width: 92%;
+  }
+
+  .about-us__visit {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-about-us {
+    padding: 16rem 2.4rem;
+  }
+
+  .block-about-us .grid {
+    row-gap: 2.4rem;
+  }
+
+  .about-us__image {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+  }
+
+  .about-us__card {
+    margin: 0 0 0 2.4rem;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .about-us__content {
+    order: 2;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .about-us__buttons .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .about-us__buttons .btn--primary {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block-about-us {
+    padding: 22rem 2.4rem;
+  }
+
+  .about-us__buttons .btn {
+    display: inline-block;
+    width: auto;
+  }
+
+  .about-us__buttons .btn--primary {
+    margin-bottom: 0;
   }
 }
