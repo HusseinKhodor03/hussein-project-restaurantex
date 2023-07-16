@@ -279,7 +279,7 @@ a {
 
 .btn--outline {
   border: 1px solid #fff;
-  background: var(--color-primary);
+  background: rgba(22, 20, 18, 0.04);
   color: #fff;
   transition: background 0.3s, border-color 0.3s;
 }
@@ -1125,5 +1125,124 @@ a {
 @media screen and (min-width: 1024px) {
   .block-browse-menu-items {
     padding: 22rem 2.4rem;
+  }
+}
+
+/* Delicious Burger Block */
+.block-delicious-burger {
+  position: relative;
+  overflow: hidden;
+  padding-top: 10rem;
+}
+
+.delicious-burger__content {
+  padding: 0 1.6rem;
+  max-width: 550px;
+}
+
+.delicious-burger__line {
+  width: 90px;
+  min-height: 2px;
+  background: #fff;
+  margin-bottom: 4.8rem;
+}
+
+.delicious-burger__heading {
+  color: #fff;
+  margin-top: 0;
+}
+
+.delicious-burger__tagline {
+  margin-bottom: 4rem;
+}
+
+.delicious-burger__image-container {
+  position: static;
+  width: 100%;
+  margin-top: 3.6rem;
+}
+
+.delicious-burger__image {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.delicious-burger__content .btn {
+  margin: 0;
+}
+
+.delicious-burger__content .btn--white-v2 {
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 480px) {
+  .delicious-burger__content {
+    padding: 0 2.4rem;
+  }
+
+  .delicious-burger__content .btn {
+    display: inline-block;
+    width: auto;
+  }
+
+  .delicious-burger__content .btn--white-v2 {
+    margin: 0 2rem 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-delicious-burger {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .delicious-burger__image-container {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 46%;
+    margin: 0;
+  }
+
+  .delicious-burger__image {
+    height: 100%;
+    max-height: none;
+    object-position: center;
+  }
+
+  .delicious-burger__content .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .delicious-burger__content .btn--white-v2 {
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block-delicious-burger {
+    padding-top: 22rem;
+    padding-bottom: 22rem;
+  }
+
+  .delicious-burger__image-container {
+    width: 50%;
+  }
+
+  .delicious-burger__content .btn {
+    display: inline-block;
+    width: auto;
+  }
+
+  .delicious-burger__content .btn--white-v2 {
+    margin-bottom: 0;
+    margin-right: 2.4rem;
   }
 }
