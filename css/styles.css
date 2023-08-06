@@ -407,59 +407,6 @@ a {
   display: block;
 }
 
-/* Testimonial Avatars */
-.avatar {
-  border-radius: 100%;
-  height: 64px;
-  width: 64px;
-}
-
-@media screen and (min-width: 768px) {
-  .avatar {
-    height: 72px;
-    width: 72px;
-  }
-}
-
-/* Quotes */
-.quote {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.quote__name {
-  font-weight: bold;
-  color: #161412;
-  margin-top: 1.2rem;
-  margin-bottom: 0;
-}
-
-.quote__text::before {
-  content: open-quote;
-}
-
-.quote__text::after {
-  content: close-quote;
-}
-
-@media screen and (min-width: 480px) {
-  .quote {
-    text-align: left;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .quote__footer {
-    /* This might not be the best approach */
-    position: relative;
-    left: 85px;
-    bottom: 70px;
-  }
-}
-
 /* Menu Items */
 .menu-item {
   position: relative;
@@ -1244,5 +1191,53 @@ a {
   .delicious-burger__content .btn--white-v2 {
     margin-bottom: 0;
     margin-right: 2.4rem;
+  }
+}
+
+/* Input Card */
+.input-card {
+  text-align: left;
+  padding: 4rem 2.4rem;
+  box-shadow: 0 14px 42px 0 rgba(8, 15, 52, 0.06);
+}
+
+.input-card:hover {
+  transform: scale(1);
+}
+
+.input-card .grid {
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.input-card__btn {
+  margin: 3.2rem 0 0;
+  padding: 1.6rem 4rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .input-card {
+    padding: 4rem 3.2rem;
+  }
+
+  .input-card__btn {
+    width: 190px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .input-card {
+    padding: 6.4rem 5.6rem;
+  }
+
+  .input-card .grid {
+    column-gap: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .input-card {
+    padding: 8.8rem 5.6rem;
   }
 }
