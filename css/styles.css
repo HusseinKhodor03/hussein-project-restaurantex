@@ -621,6 +621,10 @@ a {
 }
 
 /* Hero Block */
+.block-hero {
+  padding: 8rem 1.6rem 14rem;
+}
+
 .hero__heading {
   margin: 0 0 2.4rem;
 }
@@ -650,6 +654,15 @@ a {
 }
 
 @media screen and (min-width: 480px) {
+  .block-hero {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .hero__heading {
+    font-size: 4.8rem;
+  }
+
   .hero__content .btn {
     display: inline-block;
     width: auto;
@@ -666,8 +679,13 @@ a {
     align-self: center;
   }
 
+  .hero__heading {
+    font-size: 5.2rem;
+  }
+
   .block-hero {
-    padding: 2rem 3.6rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .hero__content .btn {
@@ -682,6 +700,10 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .hero__heading {
+    font-size: 6rem;
+  }
+
   .hero__content .btn {
     display: inline-block;
     width: auto;
@@ -1239,5 +1261,135 @@ a {
 @media screen and (min-width: 1024px) {
   .input-card {
     padding: 8.8rem 5.6rem;
+  }
+}
+
+/* Callout Block */
+.block-callout {
+  padding: 10rem 1.6rem;
+}
+
+.block-callout > .grid {
+  gap: 6rem 1.6rem;
+}
+
+.block-callout > .grid--1x2 {
+  grid-template-columns: none;
+}
+
+.block-callout.block--gradient {
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 60%,
+    var(--color-primary) 60%,
+    var(--color-primary) 100%
+  );
+}
+
+.callout__heading {
+  margin: 0 0 1.6rem;
+}
+
+.callout__tagline {
+  margin-bottom: 4rem;
+}
+
+.callout__location,
+.callout__phone,
+.callout__email {
+  display: flex;
+  flex-direction: column;
+}
+
+.callout__location .icon-container-medium,
+.callout__phone .icon-container-medium,
+.callout__email .icon-container-medium {
+  margin-bottom: 2rem;
+}
+
+.callout__location,
+.callout__phone {
+  margin-bottom: 2.4rem;
+}
+
+.callout__phone > a,
+.callout__email > a {
+  color: var(--color-body);
+  transition: color 0.3s;
+}
+
+.callout__phone > a:hover,
+.callout__email > a:hover {
+  color: var(--color-primary);
+}
+
+.callout__location > p {
+  margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .block-callout {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .block-callout > .grid {
+    column-gap: 2.4rem;
+  }
+
+  .callout__location,
+  .callout__phone,
+  .callout__email {
+    flex-direction: row;
+  }
+
+  .callout__location .icon-container-medium,
+  .callout__phone .icon-container-medium,
+  .callout__email .icon-container-medium {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .callout__location > a,
+  .callout__phone > a,
+  .callout__email > a {
+    transform: translateY(15px);
+  }
+
+  .callout__location > p {
+    transform: translateY(3px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-callout {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block-callout {
+    padding-top: 22rem;
+    padding-bottom: 22rem;
+  }
+
+  .callout__content {
+    align-self: center;
+  }
+
+  .block-callout > .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .block-callout.block--gradient {
+    background: linear-gradient(
+      to right,
+      #fff 0%,
+      #fff 60%,
+      var(--color-primary) 60%,
+      var(--color-primary) 100%
+    );
   }
 }
