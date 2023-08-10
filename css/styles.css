@@ -180,11 +180,6 @@ a {
   cursor: pointer;
 }
 
-.icon--stars {
-  width: 164px;
-  height: 25.49px;
-}
-
 .icon-container {
   background: var(--color-icon-contianer);
   width: 100px;
@@ -214,6 +209,22 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--social {
+  background: var(--color-primary);
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.icon-container--social:hover {
+  transform: scale(1.05);
+  background: #000;
 }
 
 .icon--small {
@@ -1391,5 +1402,218 @@ a {
       var(--color-primary) 60%,
       var(--color-primary) 100%
     );
+  }
+}
+
+/* Follow Us Block */
+.block--follow-us {
+  padding: 10rem 1.6rem;
+}
+
+.follow-us__header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 4rem;
+}
+
+.follow-us__heading {
+  margin: 0 0 1.6rem;
+}
+
+.follow-us__header .btn {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.follow-us__image {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.block--follow-us .grid {
+  gap: 1.6rem;
+}
+
+.block--follow-us .grid--1x3 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--1x3 .follow-us__image:nth-child(5),
+.grid--1x3 .follow-us__image:nth-child(6) {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .block--follow-us {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .follow-us__heading {
+    margin-bottom: 2.4rem;
+  }
+
+  .follow-us__header .btn {
+    display: inline;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block--follow-us {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .follow-us__header {
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 4.8rem;
+  }
+
+  .follow-us__heading {
+    margin-bottom: 0;
+    transform: translateY(7px);
+  }
+
+  .block--follow-us .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--1x3 .follow-us__image:nth-child(5),
+  .grid--1x3 .follow-us__image:nth-child(6) {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block--follow-us {
+    padding-top: 22rem;
+    padding-bottom: 22rem;
+  }
+
+  .block--follow-us .grid {
+    gap: 2.4rem;
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 6.4rem 1.6rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 1.6rem;
+}
+
+.footer__brand {
+  margin-bottom: 1.2rem;
+}
+
+.footer__logo {
+  transition: transform 0.3s;
+}
+
+.footer__logo:hover {
+  transform: scale(1.05);
+}
+
+.footer__logo {
+  width: 244px;
+  height: 33px;
+}
+
+.footer__social-description {
+  margin-bottom: 2.4rem;
+}
+
+.footer__grid-one {
+  row-gap: 8rem;
+}
+
+.footer__pages-title {
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 3.2rem;
+  font-size: 2rem;
+}
+
+.footer__pages-item {
+  color: var(--color-body);
+  margin-top: 1.8rem;
+  transition: color 0.3s;
+}
+
+.footer__pages-item:hover {
+  color: var(--color-primary);
+}
+
+.footer__pages .grid--1x2 {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.4rem;
+}
+
+.footer__images-title {
+  font-weight: bold;
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.footer__grid-two {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin: 2.4rem 0;
+}
+
+.footer__copyright .highlight:hover {
+  transition: color 0.3s;
+}
+
+.footer__copyright .highlight:hover {
+  color: var(--color-body);
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    padding: 8rem 2.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__grid-one {
+    gap: 1.6rem 6.4rem;
+  }
+
+  .footer__grid-two {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer__follow-us {
+    grid-column: -3 / -1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__grid-one {
+    gap: 1.6rem 3.4rem;
   }
 }
