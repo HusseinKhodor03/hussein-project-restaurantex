@@ -1538,8 +1538,8 @@ a {
   row-gap: 8rem;
 }
 
-.footer__pages-title {
-  font-weight: bold;
+.footer__section-title {
+  font-weight: 500;
   color: #000;
   margin-bottom: 3.2rem;
   font-size: 2rem;
@@ -1558,13 +1558,6 @@ a {
 .footer__pages .grid--1x2 {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2.4rem;
-}
-
-.footer__images-title {
-  font-weight: bold;
-  color: #000;
-  font-size: 2rem;
-  margin-bottom: 3.2rem;
 }
 
 .footer__grid-two {
