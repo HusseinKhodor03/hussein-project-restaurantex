@@ -13,5 +13,626 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="container nav collapsible">
+      <a class="nav__brand" href="/"><img src="../images/logo.svg" alt="" /></a>
+      <span class="icon-container icon-container--menu nav__toggler">
+        <svg class="icon--menu">
+          <use href="../images/sprite.svg#menu"></use>
+        </svg>
+      </span>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Menu</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#">Delivery</a></li>
+      </ul>
+      <button class="btn btn--white">Order online</button>
+      <button class="btn btn--primary">Reserve</button>
+    </nav>
+    <section class="block--gradient block-hero">
+      <div class="container grid grid--1x2">
+        <div class="hero__content">
+          <h1 class="hero__heading">
+            The best place to eat <span class="highlight">burgers in LA</span>.
+          </h1>
+          <p class="hero__tagline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            laudantium itaque ipsam excepturi esse, ducimus natus molestias ea
+            pariatur, aperiam commodi deserunt? Sit!
+          </p>
+          <a href=""
+            ><button class="btn btn--primary btn--block">Reserve</button></a
+          >
+          <a href=""
+            ><button class="btn btn--white btn--block">Order online</button></a
+          >
+        </div>
+        <div>
+          <picture>
+            <source
+              type="image/jpeg"
+              srcset="../images/burger.jpeg 1x, ../images/burger@2x.jpeg 2x"
+            />
+            <img class="hero__image" src="../images/burger.jpeg" alt="" />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="container block-order-apps">
+      <header class="block__header">
+        <h3 class="block-order-apps__heading">
+          Order from your favorite app today!
+        </h3>
+      </header>
+      <div class="order-apps">
+        <a
+          class="order-apps__app"
+          href="https://www.ubereats.com/"
+          target="_blank"
+          ><img src="../images/ubereats.svg" alt=""
+        /></a>
+        <a
+          class="order-apps__app"
+          href="https://www.doordash.com/"
+          target="_blank"
+          ><img src="../images/doordash.svg" alt=""
+        /></a>
+        <a class="order-apps__app" href="https://postmates.com/" target="_blank"
+          ><img src="../images/postmates.svg" alt=""
+        /></a>
+        <a
+          class="order-apps__app"
+          href="https://www.rappi.com.mx/"
+          target="_blank"
+          ><img src="../images/rappi.svg" alt=""
+        /></a>
+        <a
+          class="order-apps__app"
+          href="https://www.grubhub.com/"
+          target="_blank"
+          ><img src="../images/grubhub.svg" alt=""
+        /></a>
+      </div>
+    </section>
+    <div class="container-line-break">
+      <div class="line-break"></div>
+    </div>
+    <section class="container block block-browse-menu-sections">
+      <header class="block__header">
+        <h2 class="block-browse-menu-sections__heading">Browse our menu</h2>
+      </header>
+      <div class="grid grid--1x2 grid--1x4">
+        <div>
+          <div class="card">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use href="../images/sprite.svg#pancake"></use>
+              </svg>
+            </span>
+            <h3>Breakfast</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem, fuga.
+            </p>
+            <a href="#" class="link-chevron">Explore menu</a>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use href="../images/sprite.svg#burger"></use>
+              </svg>
+            </span>
+            <h3>Main Dishes</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem, fuga.
+            </p>
+            <a href="#" class="link-chevron">Explore menu</a>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use href="../images/sprite.svg#soda"></use>
+              </svg>
+            </span>
+            <h3>Drinks</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem, fuga.
+            </p>
+            <a href="#" class="link-chevron">Explore menu</a>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use href="../images/sprite.svg#cake"></use>
+              </svg>
+            </span>
+            <h3>Desserts</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem, fuga.
+            </p>
+            <a href="#" class="link-chevron">Explore menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="block-browse-menu-sections__buttons">
+        <a href=""
+          ><button class="btn btn--primary btn--block">Order online</button></a
+        >
+        <a href=""
+          ><button class="btn btn--white btn--block">Book a table</button></a
+        >
+      </div>
+    </section>
+    <section class="block--light-orange block-about-us">
+      <div class="container grid grid--1x2">
+        <div class="about-us__content">
+          <h2 class="about-us__heading">About us</h2>
+          <p class="about-us__description">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam
+            diam vitae velit bibendum elementum eget non vivamus volutpat odio
+            cras vestibulum purus aliquam.
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum
+            sed et aliquet aliquet risus tempor semper odio egestas id pulvinar
+            consectetur elit tortor non hac pellentesque lacus donec accumsan
+            quisque ultricies adipiscing mauris tortor cras est eu accumsan
+            mauris.
+          </p>
+          <div class="about-us__buttons">
+            <a href=""
+              ><button class="btn btn--primary btn--block">About us</button></a
+            >
+            <a href=""
+              ><button class="btn btn--white btn--block">
+                Join our team
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="about-us__visit">
+          <img class="about-us__image" src="../images/meals.jpeg" alt="" />
+          <div class="about-us__card">
+            <h3 class="about-us__card-heading">Come and visit us</h3>
+            <div class="about-us__location">
+              <svg class="icon--small icon--primary">
+                <use href="../images/sprite.svg#location"></use>
+              </svg>
+              <p>
+                837 W. Marshall Lane
+                <br />
+                Marshalltown, IA 50158, Los Angeles
+              </p>
+            </div>
+            <div class="about-us__phone">
+              <svg class="icon--small icon--primary">
+                <use href="../images/sprite.svg#telephone"></use>
+              </svg>
+              <a href="tel:+14148570107">(414) 857 - 0107</a>
+            </div>
+            <div class="about-us__email">
+              <svg class="icon--small icon--primary">
+                <use href="../images/sprite.svg#email"></use>
+              </svg>
+              <a href="mailto:losangeles@restaurantex.com"
+                >losangeles@restaurantex.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container block-browse-menu-items">
+      <header class="block__header">
+        <h2 class="browse-menu-items__heading">Browse our menu</h2>
+        <p class="browse-menu-items__content">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam
+          vitae velit bibendum elementum.
+        </p>
+      </header>
+      <div class="grid grid--1x2 grid--1x4">
+        <div class="menu-item">
+          <img class="menu-item__image" src="../images/burger.jpeg" alt="" />
+          <span class="badge badge--white menu-item__badge">$ 10.99 USD</span>
+          <h3 class="menu-item__heading">Classic Burger</h3>
+          <p class="menu-item__body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ex!
+          </p>
+        </div>
+        <div class="menu-item">
+          <img
+            class="menu-item__image"
+            src="../images/chocolatemilkshake.jpeg"
+            alt=""
+          />
+          <span class="badge badge--white menu-item__badge">$ 6.99 USD</span>
+          <h3 class="menu-item__heading">Chocolate Milkshake</h3>
+          <p class="menu-item__body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ex!
+          </p>
+        </div>
+        <div class="menu-item">
+          <img
+            class="menu-item__image"
+            src="../images/classicfries.jpeg"
+            alt=""
+          />
+          <span class="badge badge--white menu-item__badge">$ 5.99 USD</span>
+          <h3 class="menu-item__heading">Classic Fries</h3>
+          <p class="menu-item__body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ex!
+          </p>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item__image" src="../images/pancakes.jpeg" alt="" />
+          <span class="badge badge--white menu-item__badge">$ 8.99 USD</span>
+          <h3 class="menu-item__heading">Pancakes</h3>
+          <p class="menu-item__body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ex!
+          </p>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item__image" src="../images/icecream.jpeg" alt="" />
+          <span class="badge badge--white menu-item__badge">$ 3.99 USD</span>
+          <h3 class="menu-item__heading">Ice Cream</h3>
+          <p class="menu-item__body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ex!
+          </p>
+        </div>
+        <div class="menu-item">
+          <img
+            class="menu-item__image"
+            src="../images/chickenburger.jpeg"
+            alt=""
+          />
+          <span class="badge badge--white menu-item__badge">$ 9.99 USD</span>
+          <h3 class="menu-item__heading">Chicken Burger</h3>
+          <p class="menu-item__body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ex!
+          </p>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item__image" src="../images/eggtoast.jpeg" alt="" />
+          <span class="badge badge--white menu-item__badge">$ 6.99 USD</span>
+          <h3 class="menu-item__heading">Egg Toast</h3>
+          <p class="menu-item__body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ex!
+          </p>
+        </div>
+        <div class="menu-item">
+          <img
+            class="menu-item__image"
+            src="../images/regularsoda.jpeg"
+            alt=""
+          />
+          <span class="badge badge--white menu-item__badge">$ 1.99 USD</span>
+          <h3 class="menu-item__heading">Regular Soda</h3>
+          <p class="menu-item__body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ex!
+          </p>
+        </div>
+      </div>
+      <div class="browse-menu-items__buttons">
+        <a href=""
+          ><button class="btn btn--primary btn--block">Order online</button></a
+        >
+        <a href=""
+          ><button class="btn btn--white btn--block">Book a table</button></a
+        >
+      </div>
+    </section>
+    <section class="block--orange block-delicious-burger">
+      <div class="container">
+        <div class="grid grid--1x2">
+          <div class="delicious-burger__content">
+            <div class="delicious-burger__line"></div>
+            <h2 class="delicious-burger__heading">
+              Taste the most delicious burger in Los Angeles, CA
+            </h2>
+            <p class="delicious-burger__tagline">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam
+              diam vitae velit bibendum elementum.
+            </p>
+            <a href=""
+              ><button class="btn btn--white-v2 btn--block">
+                Order online
+              </button></a
+            >
+            <a href=""
+              ><button class="btn btn--outline btn--block">
+                Book a table
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="delicious-burger__image-container">
+        <img
+          class="delicious-burger__image"
+          src="../images/burgersstacked.jpeg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="block--gradient block-callout">
+      <div class="container grid grid--1x2">
+        <div class="callout__content">
+          <h2 class="callout__heading">Book your table now</h2>
+          <p class="callout__tagline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            optio eius ipsam iure quae a?
+          </p>
+          <div class="callout__location">
+            <span class="icon-container-medium">
+              <svg class="icon--medium icon--primary">
+                <use href="../images/sprite.svg#location"></use>
+              </svg>
+            </span>
+            <p>
+              837 W. Marshall Lane
+              <br />
+              Marshalltown, IA 50158, Los Angeles
+            </p>
+          </div>
+          <div class="callout__phone">
+            <span class="icon-container-medium">
+              <svg class="icon--medium icon--primary">
+                <use href="../images/sprite.svg#telephone"></use>
+              </svg>
+            </span>
+            <a href="tel:+14148570107">(414) 857 - 0107</a>
+          </div>
+          <div class="callout__email">
+            <span class="icon-container-medium">
+              <svg class="icon--medium icon--primary">
+                <use href="../images/sprite.svg#email"></use>
+              </svg>
+            </span>
+            <a href="mailto:losangeles@restaurantex.com"
+              >losangeles@restaurantex.com</a
+            >
+          </div>
+        </div>
+        <div class="card input-card">
+          <div class="grid grid--1x2">
+            <div>
+              <label for="name" class="input--label">Name</label>
+              <input
+                id="name"
+                type="text"
+                class="input"
+                placeholder="John Carter"
+              />
+            </div>
+            <div>
+              <label for="email" class="input--label">Email Address</label>
+              <input
+                id="email"
+                type="email"
+                class="input"
+                placeholder="example@email.com"
+              />
+            </div>
+            <div>
+              <label for="phone" class="input--label">Phone</label>
+              <input
+                id="phone"
+                type="text"
+                class="input"
+                placeholder="(555) 555 - 5555"
+              />
+            </div>
+            <div>
+              <label for="location" class="input--label">Location</label>
+              <input
+                id="location"
+                type="text"
+                class="input"
+                placeholder="Ex. Los Angeles"
+              />
+            </div>
+            <div>
+              <label for="date" class="input--label">Date</label>
+              <input
+                id="date"
+                type="text"
+                class="input"
+                placeholder="Day and month"
+              />
+            </div>
+            <div>
+              <label for="time" class="input--label">Time</label>
+              <input
+                id="time"
+                type="text"
+                class="input"
+                placeholder="Ex. 2:00PM"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="note" class="input--label">Add a note</label>
+            <textarea
+              id="note"
+              class="input input--textarea"
+              placeholder="Anything we should know?"
+            ></textarea>
+          </div>
+          <button class="btn btn--primary input-card__btn">Book a table</button>
+        </div>
+      </div>
+    </section>
+    <section class="block--light-orange block--follow-us">
+      <div class="container">
+        <header class="follow-us__header">
+          <h2 class="follow-us__heading">Follow us on Instagram</h2>
+          <a href="https://www.instagram.com/"
+            ><button class="btn btn--primary">Follow us</button></a
+          >
+        </header>
+        <div class="grid grid--1x3">
+          <img
+            class="follow-us__image"
+            src="../images/burgerslinedup.jpeg"
+            alt=""
+          />
+          <img
+            class="follow-us__image"
+            src="../images/classicfries.jpeg"
+            alt=""
+          />
+          <img
+            class="follow-us__image"
+            src="../images/burgers&pizza.jpeg"
+            alt=""
+          />
+          <img
+            class="follow-us__image"
+            src="../images/fries&ketchup.jpeg"
+            alt=""
+          />
+          <img class="follow-us__image" src="../images/hotdogs.jpeg" alt="" />
+          <img class="follow-us__image" src="../images/cocacola.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container grid grid--1x2 grid--1x3 footer__grid-one">
+        <section class="social">
+          <a class="footer__brand" href="/"
+            ><img class="footer__logo" src="../images/logo.svg" alt=""
+          /></a>
+          <p class="footer__social-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+            maxime velit ad numquam rerum dolorem.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/">
+              <span class="icon-container--social">
+                <svg class="icon--small icon--white">
+                  <use href="../images/sprite.svg#facebook"></use>
+                </svg>
+              </span>
+            </a>
+            <a href="https://twitter.com/home">
+              <span class="icon-container--social">
+                <svg class="icon--small icon--white">
+                  <use href="../images/sprite.svg#twitter"></use>
+                </svg>
+              </span>
+            </a>
+            <a href="https://www.instagram.com/">
+              <span class="icon-container--social">
+                <svg class="icon--small icon--white">
+                  <use href="../images/sprite.svg#instagram"></use>
+                </svg>
+              </span>
+            </a>
+            <a href="https://www.youtube.com/">
+              <span class="icon-container--social">
+                <svg class="icon--small icon--white">
+                  <use href="../images/sprite.svg#youtube"></use>
+                </svg>
+              </span>
+            </a>
+            <a href="https://www.whatsapp.com/">
+              <span class="icon-container--social">
+                <svg class="icon--small icon--white">
+                  <use href="../images/sprite.svg#whatsapp"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </section>
+        <section class="footer__pages">
+          <div class="grid grid--1x2">
+            <div>
+              <p class="footer__section-title">Pages</p>
+              <ul class="list">
+                <a href="#">
+                  <li class="footer__pages-item">Home</li>
+                </a>
+                <a href="#">
+                  <li class="footer__pages-item">About</li>
+                </a>
+                <a href="#">
+                  <li class="footer__pages-item">Menu</li>
+                </a>
+                <a href="#">
+                  <li class="footer__pages-item">Contact</li>
+                </a>
+                <a href="#">
+                  <li class="footer__pages-item">Delivery</li>
+                </a>
+              </ul>
+            </div>
+            <div>
+              <p class="footer__section-title">Utility Pages</p>
+              <ul class="list">
+                <a href="#">
+                  <li class="footer__pages-item">Start Here</li>
+                </a>
+                <a href="#">
+                  <li class="footer__pages-item">Styleguide</li>
+                </a>
+                <a href="#">
+                  <li class="footer__pages-item">Password Protected</li>
+                </a>
+                <a href="#">
+                  <li class="footer__pages-item">Licenses</li>
+                </a>
+                <a href="#">
+                  <li class="footer__pages-item">Changelog</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="footer__follow-us">
+          <p class="footer__section-title">Follow us on Instagram</p>
+          <div class="grid grid--1x2 footer__grid-two">
+            <img class="follow-us__image" src="../images/hotdogs.jpeg" alt="" />
+            <img
+              class="follow-us__image"
+              src="../images/burgers&pizza.jpeg"
+              alt=""
+            />
+            <img
+              class="follow-us__image"
+              src="../images/burgerslinedup.jpeg"
+              alt=""
+            />
+            <img
+              class="follow-us__image"
+              src="../images/classicfries.jpeg"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+    </footer>
+    <div class="container-line-break">
+      <div class="line-break"></div>
+    </div>
+    <p class="footer__copyright">
+      &copy; Copyright - Restaurante X | Designed by
+      <a href="https://brixtemplates.com/"
+        ><span class="highlight">BRIX Templates</span></a
+      >
+      - Powered by
+      <a href="https://webflow.com/"><span class="highlight">Webflow</span></a>
+    </p>
+    <script src="../javascript/main.js"></script>
+  </body>
 </html>
